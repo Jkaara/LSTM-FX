@@ -1,5 +1,6 @@
-# Practical LSTM Time Series Prediction for Forex with TensorFlow and Algorithmic Bot
-This is the companion code to [Pragmatic LSTM for a Forex Time Series](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
+# Pragmatic Deep Learning Model for Forex Prediction
+## Using LSTM and TensorFlow to prepare the GBPUSD Time Series and project a multi-step forecast
+This is the companion code to [Pragmatic Deep Learning Model for Forex Prediction](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
 ## Setting Up The Environment
 The model training and prediction have been tested on both Ubuntu Linux 20.04 and Windows 10 and both work as expected.
 To prepare your machine to run the code, follow these steps:
@@ -52,10 +53,6 @@ N.B. Keras became part of TensorFlow from v2, no need to install it separately.
 ```
 ## Tools
 I used Juypter Notebook from within Visual Studio Code and I executed everything using Visual Studio Code for Windows and for Linux.
-## Hardware Specifications
-It might help to know what hardware I used:
-- Laptop (for development): Dell Precision M4800, 32GB RAM, 8 Logical Processors Intel i7 2.9GHz, 2GB RAM Nvidia Quadro K2100M
-- Server (for running): Dell Precision Tower 7910, 24GB RAM, 28 Logical Processors Intel Xeon 2.6GHz, Nvidia GeForce RTX 2080 8GB RAM
 ## Training and Testing Your Model
 [LSTM-FX-Train-Test](LSTM-FX-Train-Test/README.md)
 ## Backtesting Your Trading Strategy
