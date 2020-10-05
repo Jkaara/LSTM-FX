@@ -1,6 +1,10 @@
 # Pragmatic Deep Learning Model for Forex Forecasting
-This is the companion code to [Pragmatic Deep Learning Model for Forex Forecasting](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
-You can also see the content of this page [visually explained on YouTube](https://youtu.be/bMKVVXgxmI4)
+This is the companion code to [Pragmatic Deep Learning Model for Forex Forecasting](https://medium.com/@AdamTibi/pragmatic-deep-learning-model-for-forex-forecasting-569aae6d4a1a). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
+
+You can also see the content of this page [visually explained on YouTube](https://youtu.be/bMKVVXgxmI4).
+
+Below are the instructions to setting up the environment and running the Jupyter Notebook files.
+
 ## Setting Up The Environment
 The model training and prediction have been tested on both Ubuntu Linux 20.04 and Windows 10 and both work as expected.
 To prepare your machine to run the code, follow these steps:

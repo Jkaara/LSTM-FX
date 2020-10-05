@@ -1,8 +1,7 @@
 # Training your model (Running the Code)
----
 This code is intended to run in order:
 ## Forex Data Download
-I have used this software to download the Forex one minue data: [Quant Data Manager](https://strategyquant.com/quantdatamanager/)
+I have used this software to download the Forex one minue data: [Quant Data Manager](https://strategyquant.com/quantdatamanager/).
 ## Download a Data Set
 The model is expecting GBPUSD data set called `gbpusd.csv` in `./LSTM-FX-Train-Test/data`, however, you may use any Forex pair as long as the header (first line) is this:
 ```
