@@ -1,6 +1,6 @@
-# Pragmatic Deep Learning Model for Forex Prediction
-## Using LSTM and TensorFlow to prepare the GBPUSD Time Series and project a multi-step forecast
-This is the companion code to [Pragmatic Deep Learning Model for Forex Prediction](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
+# Pragmatic Deep Learning Model for Forex Forecasting
+This is the companion code to [Pragmatic Deep Learning Model for Forex Forecasting](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
+You can also see the content of this page [visually explained on YouTube](https://youtu.be/bMKVVXgxmI4)
 ## Setting Up The Environment
 The model training and prediction have been tested on both Ubuntu Linux 20.04 and Windows 10 and both work as expected.
 To prepare your machine to run the code, follow these steps:
@@ -21,38 +21,38 @@ N.B. Keras became part of TensorFlow from v2, no need to install it separately.
 │ LICENSE                       # The code licence 
 │ README.md                     # This Readme file
 |
+├─LSTM-FX-Train-Test            # Directory of the Training and Testing of Model
+| │   common_variables.py       # Configures your model before training and testing
+| │   multi_pred_model.ipynb    # Multiple predictions of more than one unit
+| │   prep_and_split.ipynb      # Prepares your data and splits it into multiple CSVs
+| │   README.md                 # Read me for the training and testing
+| │   test_model.ipynb          # Tests your trained model
+| │   time_series.py            # Utility reusable functions 
+| │   train_model.ipynb         # Trains your model
+| │
+| ├───data                      # storage direcotry for the CSV
+| │
+| ├───models                    # Contains the trained models
+| │   └───gbpusd-32-256-14      # Sample trained model
+| │
+| └───scalers                   # Contains the scalers used in the model training
+|         gbpusd-32-256-14.bin  # Sample scaler associated with the model
+|
 ├─LSTM-FX-CTrader-Client        # Directory of the client code
 │     MLBot.cs                  # Sample bot C# code
 │     README.md                 # Read me for the CTrader Client
 |
-├─LSTM-FX-Prediction-Server     # Directory of the Web Server
-│ │   main.py                   # The web server loading file
-│ │   README.md                 # Read me for the Prediction server
-│ │
-│ └───Models                    # Directory of the ML Models 
-│     │   gbpusd-32-256-14.bin  # Sample MinMax Scaler
-│     │
-│     └───gbpusd-32-256-14      # Directory of Sample LSTM Model 
-|
-└─LSTM-FX-Train-Test            # Directory of the Training and Testing of Model
-  │   common_variables.py       # Configures your model before training and testing
-  │   multi_pred_model.ipynb    # Multiple predictions of more than one unit
-  │   prep_and_split.ipynb      # Prepares your data and splits it into multiple CSVs
-  │   README.md                 # Read me for the training and testing
-  │   test_model.ipynb          # Tests your trained model
-  │   time_series.py            # Utility reusable functions 
-  │   train_model.ipynb         # Trains your model
+└─LSTM-FX-Prediction-Server     # Directory of the Web Server
+  │   main.py                   # The web server loading file
+  │   README.md                 # Read me for the Prediction server
   │
-  ├───data                      # storage direcotry for the CSV
-  │
-  ├───models                    # Contains the trained models
-  │   └───gbpusd-32-256-14      # Sample trained model
-  │
-  └───scalers                   # Contains the scalers used in the model training
-          gbpusd-32-256-14.bin  # Sample scaler associated with the model
+  └───Models                    # Directory of the ML Models 
+      │   gbpusd-32-256-14.bin  # Sample MinMax Scaler
+      │
+      └───gbpusd-32-256-14      # Directory of Sample LSTM Model 
 ```
 ## Tools
-I used Juypter Notebook from within Visual Studio Code and I executed everything using Visual Studio Code for Windows and for Linux.
+I used Juypter Notebook from within Visual Studio Code for Windows. And I have also tried with Linux (Ubuntu 20.04) and both worked in the same way.
 ## Training and Testing Your Model
 [LSTM-FX-Train-Test](LSTM-FX-Train-Test/README.md)
 ## Backtesting Your Trading Strategy

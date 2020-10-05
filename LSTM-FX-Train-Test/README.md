@@ -1,14 +1,16 @@
 # Training your model (Running the Code)
 ---
 This code is intended to run in order:
+## Forex Data Download
+I have used this software to download the Forex one minue data: [Quant Data Manager](https://strategyquant.com/quantdatamanager/)
 ## Download a Data Set
-I left a sample GBPUSD data set `gbpusd.csv` in `./LSTM-FX-Train-Test/data`, however, you may use any Forex pair as long as the header (first line) is this:
+The model is expecting GBPUSD data set called `gbpusd.csv` in `./LSTM-FX-Train-Test/data`, however, you may use any Forex pair as long as the header (first line) is this:
 ```
-Date,Open,High,Low,Close,Volume
+Date,High,Low
 ```
 And the rest of the lines have data following this format:
 ```
-2010-01-01 00:01:00,1.61670,1.61670,1.61670,1.61670,24
+2010-01-01 00:01,1.61674,1.61670
 ```
 ## Setting Up the Variables (Parameters and Hyperparameters)
 Edit `common_variables.py` and set the `batch_size`, `window_size`, `validation_size`, `test_size`. Make sure any other Jupyter Notebook is closed to ensure they pick the latest `common_variables.py`.
